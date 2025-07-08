@@ -1,0 +1,498 @@
+Feature,Role,Variable Type,Demographic,Description
+Id,Feature,Integer,-,Unique identifier for each billboard.
+Latitude,Feature,Continuous,-,GPS latitude (WGS84) of the billboard location (in decimal degrees).
+Longitude,Feature,Continuous,-,GPS longitude (WGS84) of the billboard location (in decimal degrees).
+City,Feature,Categorical,-,"Municipality name in Puerto Rico (e.g., San Juan, Carolina)."
+PR,Feature,Categorical,-,Road prefixed name in Puerto Rico (e.g. PR22)
+Direction,Feature,Categorical,-,"Orientation of the billboard relative to traffic flow: Inbound, Outbound or Alternative which is placed on building sides"
+DEC,Feature,Integer,-,Daily Effective Circulation: estimated average daily audience per day (vehicles occupancy).
+CPM,Feature,Continuous,-,"Cost-Per-Mille: advertising cost in USD per 1,000 impressions, based on DEC."
+Size,Feature,Continuous,-,Billboard face area in square feet.
+Price,Target,Integer,-,Monthly rental price of the billboard in USD (target variable).
+Prime,Feature,Categorical,-,"Prime location indicator: Yes for high-visibility/high-traffic, No otherwise."
+B01001001,Feature,Integer,Total population,Total population in the census tract (ACS 5-year estimate).
+B01001002,Feature,Integer,Male,Number of male individuals all ages in the census tract (ACS 5-year estimate).
+B01001003,Feature,Integer,Male Under 5 years,Number of male individuals under 5 years in the census tract (ACS 5-year estimate).
+B01001004,Feature,Integer,Male 5 to 9 years,Number of male individuals 5 to 9 years in the census tract (ACS 5-year estimate).
+B01001005,Feature,Integer,Male 10 to 14 years,Number of male individuals 10 to 14 years in the census tract (ACS 5-year estimate).
+B01001006,Feature,Integer,Male 15 to 17 years,Number of male individuals 15 to 17 years in the census tract (ACS 5-year estimate).
+B01001007,Feature,Integer,Male 18 and 19 years,Number of male individuals 18 and 19 years in the census tract (ACS 5-year estimate).
+B01001008,Feature,Integer,Male 20 years,Number of male individuals 20 years in the census tract (ACS 5-year estimate).
+B01001009,Feature,Integer,Male 21 years,Number of male individuals 21 years in the census tract (ACS 5-year estimate).
+B01001010,Feature,Integer,Male 22 to 24 years,Number of male individuals 22 to 24 years in the census tract (ACS 5-year estimate).
+B01001011,Feature,Integer,Male 25 to 29 years,Number of male individuals 25 to 29 years in the census tract (ACS 5-year estimate).
+B01001012,Feature,Integer,Male 30 to 34 years,Number of male individuals 30 to 34 years in the census tract (ACS 5-year estimate).
+B01001013,Feature,Integer,Male 35 to 39 years,Number of male individuals 35 to 39 years in the census tract (ACS 5-year estimate).
+B01001014,Feature,Integer,Male 40 to 44 years,Number of male individuals 40 to 44 years in the census tract (ACS 5-year estimate).
+B01001015,Feature,Integer,Male 45 to 49 years,Number of male individuals 45 to 49 years in the census tract (ACS 5-year estimate).
+B01001016,Feature,Integer,Male 50 to 54 years,Number of male individuals 50 to 54 years in the census tract (ACS 5-year estimate).
+B01001017,Feature,Integer,Male 55 to 59 years,Number of male individuals 55 to 59 years in the census tract (ACS 5-year estimate).
+B01001018,Feature,Integer,Male 60 and 61 years,Number of male individuals 60 and 61 years in the census tract (ACS 5-year estimate).
+B01001019,Feature,Integer,Male 62 to 64 years,Number of male individuals 62 to 64 years in the census tract (ACS 5-year estimate).
+B01001020,Feature,Integer,Male 65 and 66 years,Number of male individuals 65 and 66 years in the census tract (ACS 5-year estimate).
+B01001021,Feature,Integer,Male 67 to 69 years,Number of male individuals 67 to 69 years in the census tract (ACS 5-year estimate).
+B01001022,Feature,Integer,Male 70 to 74 years,Number of male individuals 70 to 74 years in the census tract (ACS 5-year estimate).
+B01001023,Feature,Integer,Male 75 to 79 years,Number of male individuals 75 to 79 years in the census tract (ACS 5-year estimate).
+B01001024,Feature,Integer,Male 80 to 84 years,Number of male individuals 80 to 84 years in the census tract (ACS 5-year estimate).
+B01001025,Feature,Integer,Male 85 years and over,Number of male individuals 85 years and over in the census tract (ACS 5-year estimate).
+B01001026,Feature,Integer,Female,Number of female individuals all ages in the census tract (ACS 5-year estimate).
+B01001027,Feature,Integer,Female Under 5 years,Number of female individuals under 5 years in the census tract (ACS 5-year estimate).
+B01001028,Feature,Integer,Female 5 to 9 years,Number of female individuals 5 to 9 years in the census tract (ACS 5-year estimate).
+B01001029,Feature,Integer,Female 10 to 14 years,Number of female individuals 10 to 14 years in the census tract (ACS 5-year estimate).
+B01001030,Feature,Integer,Female 15 to 17 years,Number of female individuals 15 to 17 years in the census tract (ACS 5-year estimate).
+B01001031,Feature,Integer,Female 18 and 19 years,Number of female individuals 18 and 19 years in the census tract (ACS 5-year estimate).
+B01001032,Feature,Integer,Female 20 years,Number of female individuals 20 years in the census tract (ACS 5-year estimate).
+B01001033,Feature,Integer,Female 21 years,Number of female individuals 21 years in the census tract (ACS 5-year estimate).
+B01001034,Feature,Integer,Female 22 to 24 years,Number of female individuals 22 to 24 years in the census tract (ACS 5-year estimate).
+B01001035,Feature,Integer,Female 25 to 29 years,Number of female individuals 25 to 29 years in the census tract (ACS 5-year estimate).
+B01001036,Feature,Integer,Female 30 to 34 years,Number of female individuals 30 to 34 years in the census tract (ACS 5-year estimate).
+B01001037,Feature,Integer,Female 35 to 39 years,Number of female individuals 35 to 39 years in the census tract (ACS 5-year estimate).
+B01001038,Feature,Integer,Female 40 to 44 years,Number of female individuals 40 to 44 years in the census tract (ACS 5-year estimate).
+B01001039,Feature,Integer,Female 45 to 49 years,Number of female individuals 45 to 49 years in the census tract (ACS 5-year estimate).
+B01001040,Feature,Integer,Female 50 to 54 years,Number of female individuals 50 to 54 years in the census tract (ACS 5-year estimate).
+B01001041,Feature,Integer,Female 55 to 59 years,Number of female individuals 55 to 59 years in the census tract (ACS 5-year estimate).
+B01001042,Feature,Integer,Female 60 and 61 years,Number of female individuals 60 and 61 years in the census tract (ACS 5-year estimate).
+B01001043,Feature,Integer,Female 62 to 64 years,Number of female individuals 62 to 64 years in the census tract (ACS 5-year estimate).
+B01001044,Feature,Integer,Female 65 and 66 years,Number of female individuals 65 and 66 years in the census tract (ACS 5-year estimate).
+B01001045,Feature,Integer,Female 67 to 69 years,Number of female individuals 67 to 69 years in the census tract (ACS 5-year estimate).
+B01001046,Feature,Integer,Female 70 to 74 years,Number of female individuals 70 to 74 years in the census tract (ACS 5-year estimate).
+B01001047,Feature,Integer,Female 75 to 79 years,Number of female individuals 75 to 79 years in the census tract (ACS 5-year estimate).
+B01001048,Feature,Integer,Female 80 to 84 years,Number of female individuals 80 to 84 years in the census tract (ACS 5-year estimate).
+B01001049,Feature,Integer,Female 85 years and over,Number of female individuals 85 years and over in the census tract (ACS 5-year estimate).
+B01002001,Feature,Integer,Median age -- Total population,Median age  in the census tract (ACS 5-year estimate).
+B01002002,Feature,Integer,Median age -- Male,Median age of male in the census tract (ACS 5-year estimate).
+B01002003,Feature,Integer,Median age -- Female,Median age of female in the census tract (ACS 5-year estimate).
+B08008001,Feature,Integer,Total population,Total population grouped by sex of workers by place of work in the census tract(ACS 5-year estimate).
+B08008002,Feature,Integer,Living in a place,Total population living in a place in the census tract (ACS 5-year estimate).
+B08008003,Feature,Integer,Living in a place Worked in place of residence,Total population living in a place and worked in place of residence in the census tract (ACS 5-year estimate).
+B08008004,Feature,Integer,Living in a place Worked outside place of residence,Total population living in a place and worked outside place of residence in the census tract (ACS 5-year estimate).
+B08008006,Feature,Integer,Male,Number of grouped male workers by place of work in the census tract(ACS 5-year estimate).
+B08008007,Feature,Integer,Male Living in a place,Number of male individuals living in a place in the census tract (ACS 5-year estimate).
+B08008008,Feature,Integer,Male Living in a place Worked in place of residence,Number of male individuals living in a place and worked in place of residence in the census tract (ACS 5-year estimate).
+B08008009,Feature,Integer,Male Living in a place Worked outside place of residence,Number of male individuals living in a place and worked outside place of residence in the census tract (ACS 5-year estimate).
+B08008011,Feature,Integer,Female,Number of grouped female workers by place of work in the census tract(ACS 5-year estimate).
+B08008012,Feature,Integer,Female Living in a place,Number of female individuals living in a place in the census tract (ACS 5-year estimate).
+B08008013,Feature,Integer,Female Living in a place Worked in place of residence,Number of female individuals living in a place and worked in place of residence in the census tract (ACS 5-year estimate).
+B08008014,Feature,Integer,Female Living in a place Worked outside place of residence,Number of female individuals living in a place and worked outside place of residence in the census tract (ACS 5-year estimate).
+B09019001,Feature,Integer,Total population,Household Type (Including Living Alone) by Relationship total population in the census tract (ACS 5-year estimate).
+B09019002,Feature,Integer,Population in households,Population living in households in the census tract (ACS 5-year estimate).
+B09019003,Feature,Integer,Householder,Number of householders in the census tract (ACS 5-year estimate).
+B09019004,Feature,Integer,Male householder,Number of male householders in the census tract (ACS 5-year estimate).
+B09019005,Feature,Integer,Male householder living alone,Number of male householders living alone in the census tract (ACS 5-year estimate).
+B09019006,Feature,Integer,Male householder not living alone,Number of male householders not living alone in the census tract (ACS 5-year estimate).
+B09019007,Feature,Integer,Female householder,Number of female householders in the census tract (ACS 5-year estimate).
+B09019008,Feature,Integer,Female householder living alone,Number of female householders living alone in the census tract (ACS 5-year estimate).
+B09019009,Feature,Integer,Female householder not living alone,Number of female householders not living alone in the census tract (ACS 5-year estimate).
+B09019010,Feature,Integer,Opposite-sex spouse,Number of opposite-sex spouses in the census tract (ACS 5-year estimate).
+B09019011,Feature,Integer,Same-sex spouse,Number of same-sex spouses in the census tract (ACS 5-year estimate).
+B09019012,Feature,Integer,Opposite-sex unmarried partner,Number of opposite-sex unmarried partners in the census tract (ACS 5-year estimate).
+B09019013,Feature,Integer,Same-sex unmarried partner,Number of same-sex unmarried partners in the census tract (ACS 5-year estimate).
+B09019014,Feature,Integer,Child,Number of children in the census tract (ACS 5-year estimate).
+B09019015,Feature,Integer,Biological child,Number of biological children in the census tract (ACS 5-year estimate).
+B09019016,Feature,Integer,Adopted child,Number of adopted children in the census tract (ACS 5-year estimate).
+B09019017,Feature,Integer,Stepchild,Number of stepchildren in the census tract (ACS 5-year estimate).
+B09019018,Feature,Integer,Grandchild,Number of grandchildren in the census tract (ACS 5-year estimate).
+B09019019,Feature,Integer,Brother or sister,Number of brothers or sisters in the census tract (ACS 5-year estimate).
+B09019020,Feature,Integer,Parent,Number of parents in the census tract (ACS 5-year estimate).
+B09019021,Feature,Integer,Parent-in-law,Number of parents-in-law in the census tract (ACS 5-year estimate).
+B09019022,Feature,Integer,Son-in-law or daughter-in-law,Number of sons-in-law or daughters-in-law in the census tract (ACS 5-year estimate).
+B09019023,Feature,Integer,Other relatives,Number of other relatives in the census tract (ACS 5-year estimate).
+B09019025,Feature,Integer,Other nonrelatives,Number of other nonrelatives in the census tract (ACS 5-year estimate).
+B09019026,Feature,Integer,Population in group quarters,Population living in group quarters in the census tract (ACS 5-year estimate).
+B14002001,Feature,Integer,Total population 3 years and over,Number of total population enrollment by detailed level of school for 3 years and over in the census tract (ACS 5-year estimate).
+B14002002,Feature,Integer,Male population 3 years and over,Number of male population 3 years and over in the census tract (ACS 5-year estimate).
+B14002003,Feature,Integer,Male population 3 years and over enrolled in school,Number of male population 3 years and over enrolled in school in the census tract (ACS 5-year estimate).
+B14002004,Feature,Integer,Male population 3 years and over enrolled in school,Number of male population 3 years and over enrolled in school in the census tract (ACS 5-year estimate).
+B14002005,Feature,Integer,Male population 3 years and over enrolled in school,Number of male population 3 years and over enrolled in school in the census tract (ACS 5-year estimate).
+B14002006,Feature,Integer,Male population 3 years and over enrolled in school,Number of male population 3 years and over enrolled in school in the census tract (ACS 5-year estimate).
+B14002007,Feature,Integer,Male population 3 years and over enrolled in school,Number of male population 3 years and over enrolled in school in the census tract (ACS 5-year estimate).
+B14002008,Feature,Integer,Male population 3 years and over enrolled in school,Number of male population 3 years and over enrolled in school in the census tract (ACS 5-year estimate).
+B14002010,Feature,Integer,Male population 3 years and over enrolled in school,Number of male population 3 years and over enrolled in school in the census tract (ACS 5-year estimate).
+B14002011,Feature,Integer,Male population 3 years and over enrolled in school,Number of male population 3 years and over enrolled in school in the census tract (ACS 5-year estimate).
+B14002012,Feature,Integer,Male population 3 years and over enrolled in school,Number of male population 3 years and over enrolled in school in the census tract (ACS 5-year estimate).
+B14002013,Feature,Integer,Male population 3 years and over enrolled in school,Number of male population 3 years and over enrolled in school in the census tract (ACS 5-year estimate).
+B14002014,Feature,Integer,Male population 3 years and over enrolled in school,Number of male population 3 years and over enrolled in school in the census tract (ACS 5-year estimate).
+B14002015,Feature,Integer,Male population 3 years and over enrolled in school,Number of male population 3 years and over enrolled in school in the census tract (ACS 5-year estimate).
+B14002016,Feature,Integer,Male population 3 years and over enrolled in school,Number of male population 3 years and over enrolled in school in the census tract (ACS 5-year estimate).
+B14002017,Feature,Integer,Male population 3 years and over enrolled in school,Number of male population 3 years and over enrolled in school in the census tract (ACS 5-year estimate).
+B14002018,Feature,Integer,Male population 3 years and over enrolled in school,Number of male population 3 years and over enrolled in school in the census tract (ACS 5-year estimate).
+B14002019,Feature,Integer,Male population 3 years and over enrolled in school,Number of male population 3 years and over enrolled in school in the census tract (ACS 5-year estimate).
+B14002020,Feature,Integer,Male population 3 years and over enrolled in school,Number of male population 3 years and over enrolled in school in the census tract (ACS 5-year estimate).
+B14002021,Feature,Integer,Male population 3 years and over enrolled in school,Number of male population 3 years and over enrolled in school in the census tract (ACS 5-year estimate).
+B14002022,Feature,Integer,Male population 3 years and over enrolled in school,Number of male population 3 years and over enrolled in school in the census tract (ACS 5-year estimate).
+B14002023,Feature,Integer,Male population 3 years and over enrolled in school,Number of male population 3 years and over enrolled in school in the census tract (ACS 5-year estimate).
+B14002024,Feature,Integer,Male population 3 years and over enrolled in school,Number of male population 3 years and over enrolled in school in the census tract (ACS 5-year estimate).
+B14002025,Feature,Integer,Male population 3 years and over not enrolled in school,Number of male population 3 years and over not enrolled in school in the census tract (ACS 5-year estimate).
+B14002026,Feature,Integer,Female population 3 years and over,Number of female population 3 years and over in the census tract (ACS 5-year estimate).
+B14002027,Feature,Integer,Female population 3 years and over enrolled in school,Number of female population 3 years and over enrolled in school in the census tract (ACS 5-year estimate).
+B14002028,Feature,Integer,Female population 3 years and over enrolled in school,Number of female population 3 years and over enrolled in school in the census tract (ACS 5-year estimate).
+B14002029,Feature,Integer,Female population 3 years and over enrolled in school,Number of female population 3 years and over enrolled in school in the census tract (ACS 5-year estimate).
+B14002031,Feature,Integer,Female population 3 years and over enrolled in school,Number of female population 3 years and over enrolled in school in the census tract (ACS 5-year estimate).
+B14002032,Feature,Integer,Female population 3 years and over enrolled in school,Number of female population 3 years and over enrolled in school in the census tract (ACS 5-year estimate).
+B14002034,Feature,Integer,Female population 3 years and over enrolled in school,Number of female population 3 years and over enrolled in school in the census tract (ACS 5-year estimate).
+B14002035,Feature,Integer,Female population 3 years and over enrolled in school,Number of female population 3 years and over enrolled in school in the census tract (ACS 5-year estimate).
+B14002036,Feature,Integer,Female population 3 years and over enrolled in school,Number of female population 3 years and over enrolled in school in the census tract (ACS 5-year estimate).
+B14002037,Feature,Integer,Female population 3 years and over enrolled in school,Number of female population 3 years and over enrolled in school in the census tract (ACS 5-year estimate).
+B14002038,Feature,Integer,Female population 3 years and over enrolled in school,Number of female population 3 years and over enrolled in school in the census tract (ACS 5-year estimate).
+B14002039,Feature,Integer,Female population 3 years and over enrolled in school,Number of female population 3 years and over enrolled in school in the census tract (ACS 5-year estimate).
+B14002040,Feature,Integer,Female population 3 years and over enrolled in school,Number of female population 3 years and over enrolled in school in the census tract (ACS 5-year estimate).
+B14002041,Feature,Integer,Female population 3 years and over enrolled in school,Number of female population 3 years and over enrolled in school in the census tract (ACS 5-year estimate).
+B14002042,Feature,Integer,Female population 3 years and over enrolled in school,Number of female population 3 years and over enrolled in school in the census tract (ACS 5-year estimate).
+B14002043,Feature,Integer,Female population 3 years and over enrolled in school,Number of female population 3 years and over enrolled in school in the census tract (ACS 5-year estimate).
+B14002044,Feature,Integer,Female population 3 years and over enrolled in school,Number of female population 3 years and over enrolled in school in the census tract (ACS 5-year estimate).
+B14002045,Feature,Integer,Female population 3 years and over enrolled in school,Number of female population 3 years and over enrolled in school in the census tract (ACS 5-year estimate).
+B14002046,Feature,Integer,Female population 3 years and over enrolled in school,Number of female population 3 years and over enrolled in school in the census tract (ACS 5-year estimate).
+B14002047,Feature,Integer,Female population 3 years and over enrolled in school,Number of female population 3 years and over enrolled in school in the census tract (ACS 5-year estimate).
+B14002048,Feature,Integer,Female population 3 years and over enrolled in school,Number of female population 3 years and over enrolled in school in the census tract (ACS 5-year estimate).
+B14002049,Feature,Integer,Female population 3 years and over not enrolled in school,Number of female population 3 years and over not enrolled in school in the census tract (ACS 5-year estimate).
+B14003001,Feature,Integer,Total population,Number of total enrollment by type of school by age for population 3 years and over in the census tract (ACS 5-year estimate).
+B14003002,Feature,Integer,Total Male,Number of total male enrollment by type of school by age for population 3 years and over in the census tract (ACS 5-year estimate).
+B14003003,Feature,Integer,Total Male Enrolled in public school,Number of total male enrolled in public school in the census tract (ACS 5-year estimate).
+B14003004,Feature,Integer,Total Male Enrolled in public school 3 and 4 years,Number of total male enrolled in public school 3 and 4 years in the census tract (ACS 5-year estimate).
+B14003005,Feature,Integer,Total Male Enrolled in public school 5 to 9 years,Number of total male enrolled in public school 5 to 9 years in the census tract (ACS 5-year estimate).
+B14003006,Feature,Integer,Total Male Enrolled in public school 10 to 14 years,Number of total male enrolled in public school 10 to 14 years in the census tract (ACS 5-year estimate).
+B14003007,Feature,Integer,Total Male Enrolled in public school 15 to 17 years,Number of total male enrolled in public school 15 to 17 years in the census tract (ACS 5-year estimate).
+B14003008,Feature,Integer,Total Male Enrolled in public school 18 and 19 years,Number of total male enrolled in public school 18 and 19 years in the census tract (ACS 5-year estimate).
+B14003009,Feature,Integer,Total Male Enrolled in public school 20 to 24 years,Number of total male enrolled in public school 20 to 24 years in the census tract (ACS 5-year estimate).
+B14003010,Feature,Integer,Total Male Enrolled in public school 25 to 34 years,Number of total male enrolled in public school 25 to 34 years in the census tract (ACS 5-year estimate).
+B14003011,Feature,Integer,Total Male Enrolled in public school 35 years and over,Number of total male enrolled in public school 35 years and over in the census tract (ACS 5-year estimate).
+B14003012,Feature,Integer,Total Male Enrolled in private school,Number of total male enrolled in private school in the census tract (ACS 5-year estimate).
+B14003013,Feature,Integer,Total Male Enrolled in private school 3 and 4 years,Number of total male enrolled in private school 3 and 4 years in the census tract (ACS 5-year estimate).
+B14003014,Feature,Integer,Total Male Enrolled in private school 5 to 9 years,Number of total male enrolled in private school 5 to 9 years in the census tract (ACS 5-year estimate).
+B14003015,Feature,Integer,Total Male Enrolled in private school 10 to 14 years,Number of total male enrolled in private school 10 to 14 years in the census tract (ACS 5-year estimate).
+B14003016,Feature,Integer,Total Male Enrolled in private school 15 to 17 years,Number of total male enrolled in private school 15 to 17 years in the census tract (ACS 5-year estimate).
+B14003017,Feature,Integer,Total Male Enrolled in private school 18 and 19 years,Number of total male enrolled in private school 18 and 19 years in the census tract (ACS 5-year estimate).
+B14003018,Feature,Integer,Total Male Enrolled in private school 20 to 24 years,Number of total male enrolled in private school 20 to 24 years in the census tract (ACS 5-year estimate).
+B14003019,Feature,Integer,Total Male Enrolled in private school 25 to 34 years,Number of total male enrolled in private school 25 to 34 years in the census tract (ACS 5-year estimate).
+B14003020,Feature,Integer,Total Male Enrolled in private school 35 years and over,Number of total male enrolled in private school 35 years and over in the census tract (ACS 5-year estimate).
+B14003021,Feature,Integer,Total Male Not enrolled in school,Number of total male not enrolled in school in the census tract (ACS 5-year estimate).
+B14003022,Feature,Integer,Total Male Not enrolled in school 3 and 4 years,Number of total male not enrolled in school 3 and 4 years in the census tract (ACS 5-year estimate).
+B14003026,Feature,Integer,Total Male Not enrolled in school 5 to 9 years,Number of total male not enrolled in school 5 to 9 years in the census tract (ACS 5-year estimate).
+B14003027,Feature,Integer,Total Male Not enrolled in school 10 to 14 years,Number of total male not enrolled in school 10 to 14 years in the census tract (ACS 5-year estimate).
+B14003028,Feature,Integer,Total Male Not enrolled in school 15 to 17 years,Number of total male not enrolled in school 15 to 17 years in the census tract (ACS 5-year estimate).
+B14003029,Feature,Integer,Total Male Not enrolled in school 18 and 19 years,Number of total male not enrolled in school 18 and 19 years in the census tract (ACS 5-year estimate).
+B14003030,Feature,Integer,Total Male Not enrolled in school 20 to 24 years,Number of total male not enrolled in school 20 to 24 years in the census tract (ACS 5-year estimate).
+B14003031,Feature,Integer,Total Male Not enrolled in school 25 to 34 years,Number of total male not enrolled in school 25 to 34 years in the census tract (ACS 5-year estimate).
+B14003032,Feature,Integer,Total Male Not enrolled in school 35 years and over,Number of total male not enrolled in school 35 years and over in the census tract (ACS 5-year estimate).
+B14003033,Feature,Integer,Total Female,Number of total female enrollment by type of school by age for population 3 years and over in the census tract (ACS 5-year estimate).
+B14003034,Feature,Integer,Total Female Enrolled in public school,Number of total female enrolled in public school in the census tract (ACS 5-year estimate).
+B14003035,Feature,Integer,Total Female Enrolled in public school 3 and 4 years,Number of total female enrolled in public school 3 and 4 years in the census tract (ACS 5-year estimate).
+B14003036,Feature,Integer,Total Female Enrolled in public school 5 to 9 years,Number of total female enrolled in public school 5 to 9 years in the census tract (ACS 5-year estimate).
+B14003037,Feature,Integer,Total Female Enrolled in public school 10 to 14 years,Number of total female enrolled in public school 10 to 14 years in the census tract (ACS 5-year estimate).
+B14003038,Feature,Integer,Total Female Enrolled in public school 15 to 17 years,Number of total female enrolled in public school 15 to 17 years in the census tract (ACS 5-year estimate).
+B14003039,Feature,Integer,Total Female Enrolled in public school 18 and 19 years,Number of total female enrolled in public school 18 and 19 years in the census tract (ACS 5-year estimate).
+B14003040,Feature,Integer,Total Female Enrolled in public school 20 to 24 years,Number of total female enrolled in public school 20 to 24 years in the census tract (ACS 5-year estimate).
+B14003042,Feature,Integer,Total Female Enrolled in public school 25 to 34 years,Number of total female enrolled in public school 25 to 34 years in the census tract (ACS 5-year estimate).
+B14003043,Feature,Integer,Total Female Enrolled in public school 35 years and over,Number of total female enrolled in public school 35 years and over in the census tract (ACS 5-year estimate).
+B14003044,Feature,Integer,Total Female Enrolled in private school,Number of total female enrolled in private school in the census tract (ACS 5-year estimate).
+B14003045,Feature,Integer,Total Female Enrolled in private school 5 to 9 years,Number of total female enrolled in private school 5 to 9 years in the census tract (ACS 5-year estimate).
+B14003046,Feature,Integer,Total Female Enrolled in private school 10 to 14 years,Number of total female enrolled in private school 10 to 14 years in the census tract (ACS 5-year estimate).
+B14003047,Feature,Integer,Total Female Enrolled in private school 15 to 17 years,Number of total female enrolled in private school 15 to 17 years in the census tract (ACS 5-year estimate).
+B14003048,Feature,Integer,Total Female Enrolled in private school 18 and 19 years,Number of total female enrolled in private school 18 and 19 years in the census tract (ACS 5-year estimate).
+B14003049,Feature,Integer,Total Female Enrolled in private school 20 to 24 years,Number of total female enrolled in private school 20 to 24 years in the census tract (ACS 5-year estimate).
+B14003050,Feature,Integer,Total Female Enrolled in private school 25 to 34 years,Number of total female enrolled in private school 25 to 34 years in the census tract (ACS 5-year estimate).
+B14003054,Feature,Integer,Total Female Enrolled in private school 35 years and over,Number of total female enrolled in private school 35 years and over in the census tract (ACS 5-year estimate).
+B14003055,Feature,Integer,Total Female Not enrolled in school,Number of total female not enrolled in school in the census tract (ACS 5-year estimate).
+B14003056,Feature,Integer,Total Female Not enrolled in school 3 and 4 years,Number of total female not enrolled in school 3 and 4 years in the census tract (ACS 5-year estimate).
+B14003057,Feature,Integer,Total Female Not enrolled in school 18 and 19 years,Number of total female not enrolled in school 18 and 19 years in the census tract (ACS 5-year estimate).
+B14004001,Feature,Integer,Total,Total college or graduate school enrollment by type of school by age for population of 15 years and over in the census tract (ACS 5-year estimate).
+B14004002,Feature,Integer,Total Male,Number of total male college or graduate school enrollment by type of school by age for population of 15 years and over in the census tract (ACS 5-year estimate).
+B14004003,Feature,Integer,Total Male Enrolled in public college or graduate school,Number of total male enrolled in public college or graduate school in the census tract (ACS 5-year estimate).
+B14004005,Feature,Integer,Total Male Enrolled in public college or graduate school 18 to 24 years,Number of total male enrolled in public college or graduate school 18 to 24 years in the census tract (ACS 5-year estimate).
+B14004006,Feature,Integer,Total Male Enrolled in public college or graduate school 25 to 34 years,Number of total male enrolled in public college or graduate school 25 to 34 years in the census tract (ACS 5-year estimate).
+B14004007,Feature,Integer,Total Male Enrolled in public college or graduate school 35 years and over,Number of total male enrolled in public college or graduate school 35 years and over in the census tract (ACS 5-year estimate).
+B14004008,Feature,Integer,Total Male Enrolled in private college or graduate school,Number of total male enrolled in private college or graduate school in the census tract (ACS 5-year estimate).
+B14004010,Feature,Integer,Total Male Enrolled in private college or graduate school 18 to 24 years,Number of total male enrolled in private college or graduate school 18 to 24 years in the census tract (ACS 5-year estimate).
+B14004011,Feature,Integer,Total Male Enrolled in private college or graduate school 25 to 34 years,Number of total male enrolled in private college or graduate school 25 to 34 years in the census tract (ACS 5-year estimate).
+B14004012,Feature,Integer,Total Male Enrolled in private college or graduate school 35 years and over,Number of total male enrolled in private college or graduate school 35 years and over in the census tract (ACS 5-year estimate).
+B14004013,Feature,Integer,Total Male Not enrolled in college or graduate school,Number of total male not enrolled in college or graduate school in the census tract (ACS 5-year estimate).
+B14004014,Feature,Integer,Total Male Not enrolled in college or graduate school 15 to 17 years,Number of total male not enrolled in college or graduate school 15 to 17 years in the census tract (ACS 5-year estimate).
+B14004015,Feature,Integer,Total Male Not enrolled in college or graduate school 18 to 24 years,Number of total male not enrolled in college or graduate school 18 to 24 years in the census tract (ACS 5-year estimate).
+B14004016,Feature,Integer,Total Male Not enrolled in college or graduate school 25 to 34 years,Number of total male not enrolled in college or graduate school 25 to 34 years in the census tract (ACS 5-year estimate).
+B14004017,Feature,Integer,Total Male Not enrolled in college or graduate school 35 years and over,Number of total male not enrolled in college or graduate school 35 years and over in the census tract (ACS 5-year estimate).
+B14004018,Feature,Integer,Total Female,Number of total female college or graduate school enrollment by type of school by age for population of 15 years and over in the census tract (ACS 5-year estimate).
+B14004019,Feature,Integer,Total Female Enrolled in public college or graduate school,Number of total female enrolled in public college or graduate school in the census tract (ACS 5-year estimate).
+B14004021,Feature,Integer,Total Female Enrolled in public college or graduate school 18 to 24 years,Number of total female enrolled in public college or graduate school 18 to 24 years in the census tract (ACS 5-year estimate).
+B14004022,Feature,Integer,Total Female Enrolled in public college or graduate school 25 to 34 years,Number of total female enrolled in public college or graduate school 25 to 34 years in the census tract (ACS 5-year estimate).
+B14004023,Feature,Integer,Total Female Enrolled in public college or graduate school 35 years and over,Number of total female enrolled in public college or graduate school 35 years and over in the census tract (ACS 5-year estimate).
+B14004024,Feature,Integer,Total Female Enrolled in private college or graduate school,Number of total female enrolled in private college or graduate school in the census tract (ACS 5-year estimate).
+B14004026,Feature,Integer,Total Female Enrolled in private college or graduate school 18 to 24 years,Number of total female enrolled in private college or graduate school 18 to 24 years in the census tract (ACS 5-year estimate).
+B14004027,Feature,Integer,Total Female Enrolled in private college or graduate school 25 to 34 years,Number of total female enrolled in private college or graduate school 25 to 34 years in the census tract (ACS 5-year estimate).
+B14004028,Feature,Integer,Total Female Enrolled in private college or graduate school 35 years and over,Number of total female enrolled in private college or graduate school 35 years and over in the census tract (ACS 5-year estimate).
+B14004029,Feature,Integer,Total Female Not enrolled in college or graduate school,Number of total female not enrolled in college or graduate school in the census tract (ACS 5-year estimate).
+B14004030,Feature,Integer,Total Female Not enrolled in college or graduate school 15 to 17 years,Number of total female not enrolled in college or graduate school 15 to 17 years in the census tract (ACS 5-year estimate).
+B14004031,Feature,Integer,Total Female Not enrolled in college or graduate school 18 to 24 years,Number of total female not enrolled in college or graduate school 18 to 24 years in the census tract (ACS 5-year estimate).
+B14004032,Feature,Integer,Total Female Not enrolled in college or graduate school 25 to 34 years,Number of total female not enrolled in college or graduate school 25 to 34 years in the census tract (ACS 5-year estimate).
+B14004033,Feature,Integer,Total Female Not enrolled in college or graduate school 35 years and over,Number of total female not enrolled in college or graduate school 35 years and over in the census tract (ACS 5-year estimate).
+B14007001,Feature,Integer,Total population 3 years and over,Number of total population 3 years and over in the census tract (ACS 5-year estimate).
+B14007002,Feature,Integer,Population 3 years and over enrolled in school,Number of population 3 years and over enrolled in school in the census tract (ACS 5-year estimate).
+B14007003,Feature,Integer,"Population 3 years and over enrolled in nursery school, preschool",Number of population 3 years and over enrolled in nursery school or preschool in the census tract (ACS 5-year estimate).
+B14007004,Feature,Integer,Population 3 years and over enrolled in kindergarten,Number of population 3 years and over enrolled in kindergarten in the census tract (ACS 5-year estimate).
+B14007005,Feature,Integer,Population 3 years and over enrolled in grade 1,Number of population 3 years and over enrolled in grade 1 in the census tract (ACS 5-year estimate).
+B14007006,Feature,Integer,Population 3 years and over enrolled in grade 2,Number of population 3 years and over enrolled in grade 2 in the census tract (ACS 5-year estimate).
+B14007007,Feature,Integer,Population 3 years and over enrolled in grade 3,Number of population 3 years and over enrolled in grade 3 in the census tract (ACS 5-year estimate).
+B14007008,Feature,Integer,Population 3 years and over enrolled in grade 4,Number of population 3 years and over enrolled in grade 4 in the census tract (ACS 5-year estimate).
+B14007009,Feature,Integer,Population 3 years and over enrolled in grade 5,Number of population 3 years and over enrolled in grade 5 in the census tract (ACS 5-year estimate).
+B14007010,Feature,Integer,Population 3 years and over enrolled in grade 6,Number of population 3 years and over enrolled in grade 6 in the census tract (ACS 5-year estimate).
+B14007011,Feature,Integer,Population 3 years and over enrolled in grade 7,Number of population 3 years and over enrolled in grade 7 in the census tract (ACS 5-year estimate).
+B14007012,Feature,Integer,Population 3 years and over enrolled in grade 8,Number of population 3 years and over enrolled in grade 8 in the census tract (ACS 5-year estimate).
+B14007013,Feature,Integer,Population 3 years and over enrolled in grade 9,Number of population 3 years and over enrolled in grade 9 in the census tract (ACS 5-year estimate).
+B14007014,Feature,Integer,Population 3 years and over enrolled in grade 10,Number of population 3 years and over enrolled in grade 10 in the census tract (ACS 5-year estimate).
+B14007015,Feature,Integer,Population 3 years and over enrolled in grade 11,Number of population 3 years and over enrolled in grade 11 in the census tract (ACS 5-year estimate).
+B14007016,Feature,Integer,Population 3 years and over enrolled in grade 12,Number of population 3 years and over enrolled in grade 12 in the census tract (ACS 5-year estimate).
+B14007017,Feature,Integer,"Population 3 years and over enrolled in college, undergraduate years",Number of population 3 years and over enrolled in college (undergraduate) in the census tract (ACS 5-year estimate).
+B14007018,Feature,Integer,Population 3 years and over enrolled in graduate or professional school,Number of population 3 years and over enrolled in graduate or professional school in the census tract (ACS 5-year estimate).
+B14007019,Feature,Integer,Population 3 years and over not enrolled in school,Number of population 3 years and over not enrolled in school in the census tract (ACS 5-year estimate).
+B15002001,Feature,Integer,Total population 25 years and over,Number of total population 25 years and over in the census tract (ACS 5-year estimate).
+B15002002,Feature,Integer,Male population 25 years and over,Number of male population 25 years and over in the census tract (ACS 5-year estimate).
+B15002003,Feature,Integer,Male no schooling completed,Number of male no schooling completed in the census tract (ACS 5-year estimate).
+B15002004,Feature,Integer,Male nursery to 4th grade,Number of male nursery to 4th grade in the census tract (ACS 5-year estimate).
+B15002005,Feature,Integer,Male 5th and 6th grade,Number of male 5th and 6th grade in the census tract (ACS 5-year estimate).
+B15002006,Feature,Integer,Male 7th and 8th grade,Number of male 7th and 8th grade in the census tract (ACS 5-year estimate).
+B15002007,Feature,Integer,Male 9th grade,Number of male 9th grade in the census tract (ACS 5-year estimate).
+B15002008,Feature,Integer,Male 10th grade,Number of male 10th grade in the census tract (ACS 5-year estimate).
+B15002009,Feature,Integer,Male 11th grade,Number of male 11th grade in the census tract (ACS 5-year estimate).
+B15002010,Feature,Integer,"Male 12th grade, no diploma","Number of male 12th grade, no diploma in the census tract (ACS 5-year estimate)."
+B15002011,Feature,Integer,Male high school graduate (includes equivalency),Number of male high school graduate (includes equivalency) in the census tract (ACS 5-year estimate).
+B15002012,Feature,Integer,"Male some college, less than 1 year","Number of male some college, less than 1 year in the census tract (ACS 5-year estimate)."
+B15002013,Feature,Integer,"Male some college, 1 or more years, no degree","Number of male some college, 1 or more years, no degree in the census tract (ACS 5-year estimate)."
+B15002014,Feature,Integer,Male associate's degree,Number of male associate's degree in the census tract (ACS 5-year estimate).
+B15002015,Feature,Integer,Male bachelor's degree,Number of male bachelor's degree in the census tract (ACS 5-year estimate).
+B15002016,Feature,Integer,Male graduate or professional degree,Number of male graduate or professional degree in the census tract (ACS 5-year estimate).
+B15002017,Feature,Integer,Female population 25 years and over,Number of female population 25 years and over in the census tract (ACS 5-year estimate).
+B15002018,Feature,Integer,Female no schooling completed,Number of female no schooling completed in the census tract (ACS 5-year estimate).
+B15002019,Feature,Integer,Female nursery to 4th grade,Number of female nursery to 4th grade in the census tract (ACS 5-year estimate).
+B15002020,Feature,Integer,Female 5th and 6th grade,Number of female 5th and 6th grade in the census tract (ACS 5-year estimate).
+B15002021,Feature,Integer,Female 7th and 8th grade,Number of female 7th and 8th grade in the census tract (ACS 5-year estimate).
+B15002022,Feature,Integer,Female 9th grade,Number of female 9th grade in the census tract (ACS 5-year estimate).
+B15002023,Feature,Integer,Female 10th grade,Number of female 10th grade in the census tract (ACS 5-year estimate).
+B15002024,Feature,Integer,Female 11th grade,Number of female 11th grade in the census tract (ACS 5-year estimate).
+B15002025,Feature,Integer,"Female 12th grade, no diploma","Number of female 12th grade, no diploma in the census tract (ACS 5-year estimate)."
+B15002026,Feature,Integer,Female high school graduate (includes equivalency),Number of female high school graduate (includes equivalency) in the census tract (ACS 5-year estimate).
+B15002027,Feature,Integer,"Female some college, less than 1 year","Number of female some college, less than 1 year in the census tract (ACS 5-year estimate)."
+B15002028,Feature,Integer,"Female some college, 1 or more years, no degree","Number of female some college, 1 or more years, no degree in the census tract (ACS 5-year estimate)."
+B15002029,Feature,Integer,Female associate's degree,Number of female associate's degree in the census tract (ACS 5-year estimate).
+B15002030,Feature,Integer,Female bachelor's degree,Number of female bachelor's degree in the census tract (ACS 5-year estimate).
+B15002031,Feature,Integer,Female graduate or professional degree,Number of female graduate or professional degree in the census tract (ACS 5-year estimate).
+B15002032,Feature,Integer,Female Bachelor's degree,Number of female individuals bachelor's degree in the census tract (ACS 5-year estimate).
+B15002033,Feature,Integer,Female Master's degree,Number of female individuals master's degree in the census tract (ACS 5-year estimate).
+B15002034,Feature,Integer,Female Professional school degree,Number of female individuals professional school degree in the census tract (ACS 5-year estimate).
+B15002035,Feature,Integer,Female Doctorate degree,Number of female individuals doctorate degree in the census tract (ACS 5-year estimate).
+B23025001,Feature,Integer,Total population 16 years and over,Number of total population 16 years and over in the census tract (ACS 5-year estimate).
+B23025002,Feature,Integer,Population 16 years and over in labor force,Number of population 16 years and over in labor force in the census tract (ACS 5-year estimate).
+B23025003,Feature,Integer,Population 16 years and over in civilian labor force,Number of population 16 years and over in civilian labor force in the census tract (ACS 5-year estimate).
+B23025004,Feature,Integer,Population 16 years and over employed,Number of population 16 years and over employed in the census tract (ACS 5-year estimate).
+B23025005,Feature,Integer,Population 16 years and over unemployed,Number of population 16 years and over unemployed in the census tract (ACS 5-year estimate).
+B23025006,Feature,Integer,Population 16 years and over in armed forces,Number of population 16 years and over in armed forces in the census tract (ACS 5-year estimate).
+B23025007,Feature,Integer,Population 16 years and over not in labor force,Number of population 16 years and over not in labor force in the census tract (ACS 5-year estimate).
+B24080001,Feature,Integer,Civilian employed population 16 years and over,Number of civilian employed population 16 years and over in the census tract (ACS 5-year estimate).
+B24080002,Feature,Integer,Male civilian employed population 16 years and over,Number of male civilian employed population 16 years and over in the census tract (ACS 5-year estimate).
+B24080003,Feature,Integer,Male Private wage and salary workers,Number of male private wage and salary workers in the census tract (ACS 5-year estimate).
+B24080004,Feature,Integer,Male Private wage and salary workers – Employee of a private company,Number of male employees of private companies in the census tract (ACS 5-year estimate).
+B24080005,Feature,Integer,Male Private wage and salary workers – Self-employed in own not incorporated business,Number of male self-employed (own not incorporated business) workers in the census tract (ACS 5-year estimate).
+B24080006,Feature,Integer,Male Private wage and salary workers – Private not-for-profit,Number of male private not-for-profit wage and salary workers in the census tract (ACS 5-year estimate).
+B24080007,Feature,Integer,Male Public-sector workers – Local government,Number of male local government workers in the census tract (ACS 5-year estimate).
+B24080008,Feature,Integer,Male Public-sector workers – State government,Number of male state government workers in the census tract (ACS 5-year estimate).
+B24080009,Feature,Integer,Male Public-sector workers – Federal,Number of male federal government workers in the census tract (ACS 5-year estimate).
+B24080010,Feature,Integer,Male Private wage and salary workers – Self-employed in own incorporated business,Number of male self-employed (own incorporated business) workers in the census tract (ACS 5-year estimate).
+B24080012,Feature,Integer,Femal civilian employed population 16 years and over,Number of female civilian employed population 16 years and over in the census tract (ACS 5-year estimate).
+B24080013,Feature,Integer,Female Private wage and salary workers,Number of female private wage and salary workers in the census tract (ACS 5-year estimate).
+B24080014,Feature,Integer,Female Private wage and salary workers – Employee of a private company,Number of female employees of private companies in the census tract (ACS 5-year estimate).
+B24080015,Feature,Integer,Female Private wage and salary workers – Self-employed in own incorporated business,Number of female self-employed (own incorporated business) workers in the census tract (ACS 5-year estimate).
+B24080016,Feature,Integer,Female Private wage and salary workers – Private not-for-profit,Number of female private not-for-profit wage and salary workers in the census tract (ACS 5-year estimate).
+B24080017,Feature,Integer,Female Public-sector workers – Local government,Number of female local government workers in the census tract (ACS 5-year estimate).
+B24080018,Feature,Integer,Female Public-sector workers – State government,Number of female state government workers in the census tract (ACS 5-year estimate).
+B24080019,Feature,Integer,Female Public-sector workers – Federal,Number of female federal government workers in the census tract (ACS 5-year estimate).
+B24080020,Feature,Integer,Female Private wage and salary workers – Self-employed in own not incorporated business,Number of female self-employed (own not incorporated business) workers in the census tract (ACS 5-year estimate).
+B25002001,Feature,Integer,Total housing units,Number of total housing units in the census tract (ACS 5-year estimate).
+B25002002,Feature,Integer,Occupied housing units,Number of occupied housing units in the census tract (ACS 5-year estimate).
+B25002003,Feature,Integer,Vacant housing units,Number of vacant housing units in the census tract (ACS 5-year estimate).
+B25003001,Feature,Integer,Total household tenure,Total household tenure in the census tract (ACS 5-year estimate).
+B25003002,Feature,Integer,Owner-occupied housing units,Number of owner-occupied housing units in the census tract (ACS 5-year estimate).
+B25003003,Feature,Integer,Renter-occupied housing units,Number of renter-occupied housing units in the census tract (ACS 5-year estimate).
+B25034001,Feature,Integer,Total housing units,Number of total housing units in the census tract (ACS 5-year estimate).
+B25034003,Feature,Integer,Housing units built 2010 to 2013,Number of housing units built between 2010 and 2013 in the census tract (ACS 5-year estimate).
+B25034004,Feature,Integer,Housing units built 2000 to 2009,Number of housing units built between 2000 and 2009 in the census tract (ACS 5-year estimate).
+B25034005,Feature,Integer,Housing units built 1990 to 1999,Number of housing units built between 1990 and 1999 in the census tract (ACS 5-year estimate).
+B25034006,Feature,Integer,Housing units built 1980 to 1989,Number of housing units built between 1980 and 1989 in the census tract (ACS 5-year estimate).
+B25034007,Feature,Integer,Housing units built 1970 to 1979,Number of housing units built between 1970 and 1979 in the census tract (ACS 5-year estimate).
+B25034008,Feature,Integer,Housing units built 1960 to 1969,Number of housing units built between 1960 and 1969 in the census tract (ACS 5-year estimate).
+B25034009,Feature,Integer,Housing units built 1950 to 1959,Number of housing units built between 1950 and 1959 in the census tract (ACS 5-year estimate).
+B25034010,Feature,Integer,Housing units built 1940 to 1949,Number of housing units built between 1940 and 1949 in the census tract (ACS 5-year estimate).
+B25034011,Feature,Integer,Housing units built 1939 or earlier,Number of housing units built in 1939 or earlier in the census tract (ACS 5-year estimate).
+Apartments,Feature,Integer,-,Number of apartment buildings within a 500 m buffer around the billboard (OSM).
+Chapel,Feature,Integer,-,Number of chapels within a 500 m buffer around the billboard (OSM).
+Church,Feature,Integer,-,Number of churches within a 500 m buffer around the billboard (OSM).
+Commercial_building,Feature,Integer,-,Number of commercial buildings within a 500 m buffer around the billboard (OSM).
+Concert_hall,Feature,Integer,-,Number of concert halls within a 500 m buffer around the billboard (OSM).
+Construction,Feature,Integer,-,Number of construction sites within a 500 m buffer around the billboard (OSM).
+Detached,Feature,Integer,-,Number of detached houses within a 500 m buffer around the billboard (OSM).
+Dormitory,Feature,Integer,-,Number of dormitory buildings within a 500 m buffer around the billboard (OSM).
+Garage,Feature,Integer,-,Number of standalone garages within a 500 m buffer around the billboard (OSM).
+Government,Feature,Integer,-,"Number of government buildings (e.g., municipal offices) within a 500 m buffer (OSM)."
+Grandstand,Feature,Integer,-,"Number of grandstands (e.g., sports bleachers) within a 500 m buffer (OSM)."
+House,Feature,Integer,-,Number of single?family houses within a 500 m buffer around the billboard (OSM).
+Hut,Feature,Integer,-,Number of huts or small shelters within a 500 m buffer around the billboard (OSM).
+Industrial_building,Feature,Integer,-,Number of industrial buildings within a 500 m buffer around the billboard (OSM).
+Manufacture,Feature,Integer,-,Number of manufacturing facilities within a 500 m buffer around the billboard (OSM).
+Office,Feature,Integer,-,Number of office buildings within a 500 m buffer around the billboard (OSM).
+Part,Feature,Integer,-,Number of “part” features (partial/fragmented architectural objects) within 500 m (OSM).
+Public,Feature,Integer,-,"Number of public buildings (e.g., libraries, community halls) within 500 m (OSM)."
+Residential_building,Feature,Integer,-,Number of residential buildings (all types) within a 500 m buffer (OSM).
+Retail_building,Feature,Integer,-,Number of retail/commercial storefronts within 500 m (OSM).
+Semidetached_house,Feature,Integer,-,Number of semidetached houses within a 500 m buffer (OSM).
+Service_building,Feature,Integer,-,"Number of service?oriented facilities (e.g., utilities) within 500 m (OSM)."
+Shed,Feature,Integer,-,Number of sheds (small outbuildings) within a 500 m buffer (OSM).
+Static_caravan,Feature,Integer,-,Number of static caravans (parked mobile homes) within 500 m (OSM).
+Storage_tank,Feature,Integer,-,Number of storage tanks (liquid/gas) within a 500 m buffer (OSM).
+Terminal,Feature,Integer,-,"Number of transport terminals (bus, ferry, airport) within 500 m (OSM)."
+Terrace,Feature,Integer,-,Number of terraced houses within a 500 m buffer (OSM).
+Train_station,Feature,Integer,-,Number of train stations within a 500 m buffer around the billboard (OSM).
+Warehouse,Feature,Integer,-,Number of warehouses within a 500 m buffer (OSM).
+Arts_centre,Feature,Integer,-,Number of arts centres or cultural venues within a 500 m buffer (OSM).
+Artwork,Feature,Integer,-,"Number of public art installations (statues, sculptures) within a 500 m buffer (OSM)."
+Atm,Feature,Integer,-,Number of ATMs within a 500 m buffer around the billboard (OSM).
+Attraction,Feature,Integer,-,Number of tourist attractions (landmarks) within a 500 m buffer (OSM).
+Bakery,Feature,Integer,-,Number of bakeries within a 500 m buffer around the billboard (OSM).
+Bank,Feature,Integer,-,Number of bank branches within a 500 m buffer (OSM).
+Bar,Feature,Integer,-,Number of bars or pubs within a 500 m buffer (OSM).
+Beauty_shop,Feature,Integer,-,Number of beauty salons within a 500 m buffer (OSM).
+Bench,Feature,Integer,-,Number of benches (public seating) within a 500 m buffer (OSM).
+Beverages,Feature,Integer,-,"Number of beverage shops (juice bars, drink vendors) within 500 m (OSM)."
+Bicycle_rental,Feature,Integer,-,Number of bicycle?rental stations within a 500 m buffer (OSM).
+Bicycle_shop,Feature,Integer,-,Number of bicycle repair shops within a 500 m buffer (OSM).
+Bookshop,Feature,Integer,-,Number of bookshops within a 500 m buffer (OSM).
+Butcher,Feature,Integer,-,Number of butcher shops within a 500 m buffer (OSM).
+Cafe,Feature,Integer,-,Number of cafés (coffee shops) within a 500 m buffer (OSM).
+Car_dealership,Feature,Integer,-,Number of car dealerships within a 500 m buffer (OSM).
+Car_rental,Feature,Integer,-,Number of car?rental agencies within a 500 m buffer (OSM).
+Car_wash,Feature,Integer,-,Number of car washes within a 500 m buffer (OSM).
+Chemist,Feature,Integer,-,Number of chemist (pharmacy) shops within a 500 m buffer (OSM).
+Cinema,Feature,Integer,-,Number of movie theatres (cinemas) within a 500 m buffer (OSM).
+Clinic,Feature,Integer,-,Number of medical clinics within a 500 m buffer (OSM).
+Clothes,Feature,Integer,-,Number of clothing stores within a 500 m buffer (OSM).
+College,Feature,Integer,-,Number of colleges (higher?education institutions) within a 500 m buffer (OSM).
+Comms_tower,Feature,Integer,-,Number of communications towers (cell towers) within a 500 m buffer (OSM).
+Community_centre,Feature,Integer,-,Number of community centres (public halls) within a 500 m buffer (OSM).
+Convenience,Feature,Integer,-,Number of convenience stores within a 500 m buffer (OSM).
+Courthouse,Feature,Integer,-,Number of courthouses within a 500 m buffer (OSM).
+Dentist,Feature,Integer,-,Number of dental offices (dentists) within a 500 m buffer (OSM).
+Department_store,Feature,Integer,-,Number of department stores within a 500 m buffer (OSM).
+Doctors,Feature,Integer,-,Number of physicians’ offices within a 500 m buffer (OSM).
+Dog_park,Feature,Integer,-,Number of dog parks (off?leash areas) within a 500 m buffer (OSM).
+Doityourself,Feature,Integer,-,Number of DIY/home improvement stores within a 500 m buffer (OSM).
+Embassy,Feature,Integer,-,Number of embassies or consulates within a 500 m buffer (OSM).
+Fast_food,Feature,Integer,-,Number of fast?food outlets within a 500 m buffer (OSM).
+Fire_station,Feature,Integer,-,Number of fire stations within a 500 m buffer (OSM).
+Florist,Feature,Integer,-,Number of florists (flower shops) within a 500 m buffer (OSM).
+Food_court,Feature,Integer,-,"Number of food courts (e.g., mall dining areas) within a 500 m buffer (OSM)."
+Fountain,Feature,Integer,-,Number of public fountains within a 500 m buffer (OSM).
+Furniture_shop,Feature,Integer,-,Number of furniture retailers within a 500 m buffer (OSM).
+Garden_centre,Feature,Integer,-,Number of garden centres/nurseries within a 500 m buffer (OSM).
+Gift_shop,Feature,Integer,-,Number of gift shops/souvenir stores within a 500 m buffer (OSM).
+Golf_course,Feature,Integer,-,Number of golf courses (outdoor recreation areas) within a 500 m buffer (OSM).
+Graveyard,Feature,Integer,-,Number of graveyards/cemeteries within a 500 m buffer (OSM).
+Greengrocer,Feature,Integer,-,Number of greengrocers (produce markets) within a 500 m buffer (OSM).
+Guesthouse,Feature,Integer,-,Number of guesthouses/inns within a 500 m buffer (OSM).
+Hairdresser,Feature,Integer,-,Number of hair salons within a 500 m buffer (OSM).
+Hospital,Feature,Integer,-,Number of hospitals within a 500 m buffer (OSM).
+Hostel,Feature,Integer,-,Number of hostels (budget lodging) within a 500 m buffer (OSM).
+Hotel,Feature,Integer,-,Number of hotels within a 500 m buffer (OSM).
+Jeweller,Feature,Integer,-,Number of jewelry stores within a 500 m buffer (OSM).
+Kindergarten,Feature,Integer,-,Number of kindergartens or preschools within a 500 m buffer (OSM).
+Kiosk,Feature,Integer,-,Number of kiosks (small stands) within a 500 m buffer (OSM).
+Laundry,Feature,Integer,-,Number of laundromats within a 500 m buffer (OSM).
+Library,Feature,Integer,-,Number of public libraries within a 500 m buffer (OSM).
+Mall,Feature,Integer,-,Number of shopping malls within a 500 m buffer (OSM).
+Market_place,Feature,Integer,-,Number of open?air markets or market halls within a 500 m buffer (OSM).
+Memorial,Feature,Integer,-,Number of memorials/statues within a 500 m buffer (OSM).
+Mobile_phone_shop,Feature,Integer,-,Number of mobile phone shops within a 500 m buffer (OSM).
+Monument,Feature,Integer,-,Number of monuments (historical landmarks) within a 500 m buffer (OSM).
+Motel,Feature,Integer,-,Number of motels within a 500 m buffer (OSM).
+Museum,Feature,Integer,-,Number of museums within a 500 m buffer (OSM).
+Nightclub,Feature,Integer,-,Number of nightclubs within a 500 m buffer (OSM).
+Nursing_home,Feature,Integer,-,Number of nursing homes/long?term care facilities within a 500 m buffer (OSM).
+Optician,Feature,Integer,-,Number of optician shops within a 500 m buffer (OSM).
+Park,Feature,Integer,-,Number of parks or playgrounds within a 500 m buffer (OSM).
+Pharmacy,Feature,Integer,-,Number of pharmacies within a 500 m buffer (OSM).
+Pitch,Feature,Integer,-,Number of sports pitches (soccer/football fields) within a 500 m buffer (OSM).
+Playground,Feature,Integer,-,Number of playgrounds within a 500 m buffer (OSM).
+Police,Feature,Integer,-,Number of police stations within a 500 m buffer (OSM).
+Post_box,Feature,Integer,-,Number of public post boxes within a 500 m buffer (OSM).
+Post_office,Feature,Integer,-,Number of post offices within a 500 m buffer (OSM).
+Prison,Feature,Integer,-,Number of prisons/jails within a 500 m buffer (OSM).
+Pub,Feature,Integer,-,Number of pubs or taverns within a 500 m buffer (OSM).
+Public_building,Feature,Integer,-,"Number of public buildings (e.g., town halls) within a 500 m buffer (OSM)."
+Restaurant,Feature,Integer,-,Number of restaurants within a 500 m buffer (OSM).
+Ruins,Feature,Integer,-,Number of architectural ruins within a 500 m buffer (OSM).
+School,Feature,Integer,-,Number of schools (all levels) within a 500 m buffer (OSM).
+Shelter,Feature,Integer,-,"Number of public shelters (bus shelters, etc.) within a 500 m buffer (OSM)."
+Shoe_shop,Feature,Integer,-,Number of shoe stores within a 500 m buffer (OSM).
+Sports_centre,Feature,Integer,-,Number of sports centres/gymnasiums within a 500 m buffer (OSM).
+Sports_shop,Feature,Integer,-,Number of sports equipment shops within a 500 m buffer (OSM).
+Stadium,Feature,Integer,-,Number of stadiums within a 500 m buffer (OSM).
+Stationery,Feature,Integer,-,Number of stationery stores within a 500 m buffer (OSM).
+Supermarket,Feature,Integer,-,Number of supermarkets within a 500 m buffer (OSM).
+Swimming_pool,Feature,Integer,-,Number of swimming pools (public or private) within a 500 m buffer (OSM).
+Telephone,Feature,Integer,-,Number of public telephones/telephone booths within a 500 m buffer (OSM).
+Theatre,Feature,Integer,-,Number of theatres (playhouses) within a 500 m buffer (OSM).
+Theme_park,Feature,Integer,-,Number of theme parks or amusement parks within a 500 m buffer (OSM).
+Toilet,Feature,Integer,-,Number of public restrooms/toilets within a 500 m buffer (OSM).
+Tourist_info,Feature,Integer,-,Number of tourist information centres within a 500 m buffer (OSM).
+Tower,Feature,Integer,-,"Number of towers (observation, water towers, etc.) within a 500 m buffer (OSM)."
+Town_hall,Feature,Integer,-,Number of town halls within a 500 m buffer (OSM).
+Travel_agent,Feature,Integer,-,Number of travel agencies within a 500 m buffer (OSM).
+University,Feature,Integer,-,Number of universities/colleges within a 500 m buffer (OSM).
+Vending_any,Feature,Integer,-,Number of vending machines (any type) within a 500 m buffer (OSM).
+Vending_parking,Feature,Integer,-,Number of parking?lot vending machines (parking pay stations) within a 500 m buffer (OSM).
+Veterinary,Feature,Integer,-,Number of veterinary clinics within a 500 m buffer (OSM).
+Viewpoint,Feature,Integer,-,Number of viewpoints (scenic overlooks) within a 500 m buffer (OSM).
+Wastewater_plant,Feature,Integer,-,Number of wastewater treatment plants within a 500 m buffer (OSM).
+Water_tower,Feature,Integer,-,Number of water towers within a 500 m buffer (OSM).
+Zoo,Feature,Integer,-,Number of zoos within a 500 m buffer (OSM).
+Allotments,Feature,Integer,-,Number of allotment (community garden) areas within a 500 m buffer around the billboard (OSM).
+Cemetery,Feature,Integer,-,Number of cemetery polygons within a 500 m buffer around the billboard (OSM).
+Commercial_landuse,Feature,Integer,-,Number of commercial?land?use polygons within a 500 m buffer around the billboard (OSM).
+Farmland,Feature,Integer,-,Number of farmland (crop fields) polygons within a 500 m buffer around the billboard (OSM).
+Forest,Feature,Integer,-,Number of forest (wooded) polygons within a 500 m buffer around the billboard (OSM).
+Grass,Feature,Integer,-,Number of grassland (meadows) polygons within a 500 m buffer around the billboard (OSM).
+Industrial_landuse,Feature,Integer,-,Number of industrial?land?use polygons within a 500 m buffer around the billboard (OSM).
+Meadow,Feature,Integer,-,Number of meadow polygons within a 500 m buffer around the billboard (OSM).
+Military_landuse,Feature,Integer,-,Number of military?base polygons within a 500 m buffer around the billboard (OSM).
+Nature_reserve,Feature,Integer,-,Number of nature?reserve polygons within a 500 m buffer around the billboard (OSM).
+Recreation_ground,Feature,Integer,-,"Number of recreation?ground polygons (e.g., playing fields) within a 500 m buffer (OSM)."
+Residential_landuse,Feature,Integer,-,Number of residential?land?use polygons within a 500 m buffer around the billboard (OSM).
+Retail_landuse,Feature,Integer,-,Number of retail?land?use polygons within a 500 m buffer around the billboard (OSM).
+Scrub_landuse,Feature,Integer,-,Number of scrubland (brush) polygons within a 500 m buffer around the billboard (OSM).
+Cycleway,Feature,Integer,-,Number of cycleway (bicycle path) segments within a 500 m buffer around the billboard (OSM).
+Footway,Feature,Integer,-,Number of footway (pedestrian path) segments within a 500 m buffer around the billboard (OSM).
+Motorway,Feature,Integer,-,Number of motorway (limited?access highway) segments within a 500 m buffer around the billboard (OSM).
+Motorway_link,Feature,Integer,-,Number of motorway?link (ramp) segments within a 500 m buffer around the billboard (OSM).
+Path_way,Feature,Integer,-,Number of unclassified “path” segments within a 500 m buffer around the billboard (OSM).
+Pedestrian,Feature,Integer,-,Number of pedestrian?only street segments within a 500 m buffer around the billboard (OSM).
+Primary,Feature,Integer,-,Number of primary road segments (major arterial) within a 500 m buffer around the billboard (OSM).
+Primary_link,Feature,Integer,-,Number of primary?link (connector) road segments within a 500 m buffer around the billboard (OSM).
+Residential,Feature,Integer,-,Number of residential street segments within a 500 m buffer around the billboard (OSM).
+Secondary,Feature,Integer,-,Number of secondary road segments (secondary arterial) within a 500 m buffer around the billboard (OSM).
+Secondary_link,Feature,Integer,-,Number of secondary?link (connector) road segments within a 500 m buffer around the billboard (OSM).
+Service,Feature,Integer,-,"Number of service?road segments (parking?lot access, driveways) within a 500 m buffer (OSM)."
+Steps,Feature,Integer,-,Number of stairway steps (pedestrian steps) segments within a 500 m buffer around the billboard (OSM).
+Tertiary,Feature,Integer,-,Number of tertiary road segments (minor arterial) within a 500 m buffer around the billboard (OSM).
+Tertiary_link,Feature,Integer,-,Number of tertiary?link (connector) road segments within a 500 m buffer around the billboard (OSM).
+Track,Feature,Integer,-,Number of track (unpaved rural roads) segments within a 500 m buffer around the billboard (OSM).
+Trunk,Feature,Integer,-,Number of trunk (highway) segments within a 500 m buffer around the billboard (OSM).
+Trunk_link,Feature,Integer,-,Number of trunk?link (connector) road segments within a 500 m buffer around the billboard (OSM).
+Unclassified_way,Feature,Integer,-,Number of unclassified road segments within a 500 m buffer around the billboard (OSM).
+Total_roads,Feature,Integer,-,Number of all road segments (any classification) within a 500 m buffer around the billboard (OSM).
+Crossing,Feature,Integer,-,Number of pedestrian crossings (crosswalks) within a 500 m buffer around the billboard (OSM).
+Fuel,Feature,Integer,-,Number of fuel (gas station) nodes within a 500 m buffer around the billboard (OSM).
+Motorway_junction,Feature,Integer,-,Number of motorway junction within a 500 meter buffer around the billboard (sourced from OSM).
+Parking_bicycle,Feature,Integer,-,Number of parking bicycle within a 500 meter buffer around the billboard (sourced from OSM).
+Parking_multistorey,Feature,Integer,-,Number of parking multistorey within a 500 meter buffer around the billboard (sourced from OSM).
+Bus_stop,Feature,Integer,-,Number of bus stop within a 500 meter buffer around the billboard (sourced from OSM).
+Street_lamp,Feature,Integer,-,Number of street lamp within a 500 meter buffer around the billboard (sourced from OSM).
+Traffic_signals,Feature,Integer,-,Number of traffic signals within a 500 meter buffer around the billboard (sourced from OSM).
+Turning_circle,Feature,Integer,-,Number of turning circle within a 500 meter buffer around the billboard (sourced from OSM).
+Parking,Feature,Integer,-,Total number of surface parking lots within a 500 meter buffer around the billboard (sourced from OSM).
+Building_count,Feature,Integer,-,Number of building count within a 500 meter buffer around the billboard (sourced from OSM).
+Building_area,Feature,Integer,-,Sum of building footprint area (in square feet) within a 500 meter buffer around the billboard (sourced from OSM).
